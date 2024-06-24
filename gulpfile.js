@@ -67,7 +67,8 @@ function fontTask() {
 }
 
 function cleanTask() {
-    return del(['./dist/*', '!./dist/img'])
+    // return del(['./dist/*', '!./dist/img'])
+    return del('./dist')
 }
 
 function serverTask() {
