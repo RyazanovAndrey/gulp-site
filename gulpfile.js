@@ -25,7 +25,6 @@ const errorMessage = (title) => {
 
 function htmlTask() {
     return src('./src/*.html')
-    .pipe(newer('./dist/'))
     .pipe(plumber(errorMessage('HTML Error')))
     .pipe(html({
         prefix:'@@',

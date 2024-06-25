@@ -1,0 +1,25 @@
+// container
+
+.container {
+
+    @include desktop {
+        max-width: $laptop;
+    }
+
+    @include laptop {
+        max-width: $tablet;
+    }
+
+    @include tablet {
+        max-width: $mobile;
+    }
+
+    @include mobile {
+        max-width: 90%;
+    }
+
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
